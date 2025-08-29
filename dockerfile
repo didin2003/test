@@ -7,6 +7,7 @@ WORKDIR /app
 
 RUN sudo apt-get update &&
     sudo apt install git
+    
 RUN pip install --upgrade pip &&
     pip install -r requirements.txt
 
