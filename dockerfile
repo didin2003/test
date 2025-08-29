@@ -15,6 +15,10 @@ HELLO
 
 HAI
 
+BYE
+
+one 
+
 COPY . /app/
 
 EXPOSE 8000
