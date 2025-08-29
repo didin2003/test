@@ -11,6 +11,8 @@ RUN sudo apt-get update &&
 RUN pip install --upgrade pip &&
     pip install -r requirements.txt
 
+HELLO
+
 COPY . /app/
 
 EXPOSE 8000
