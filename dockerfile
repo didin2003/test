@@ -5,6 +5,14 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
+RUN sudo apt-get update &&
+    sudo apt install git
+    
+RUN pip install --upgrade pip &&
+    pip install -r requirements.txt
+
+HELLO
+
 RUN pip install --upgrade pip &&
     pip install -r requirements.txt
 
@@ -13,4 +21,3 @@ COPY . /app/
 EXPOSE 8000
 
 CMD python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000
-
