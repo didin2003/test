@@ -13,6 +13,8 @@ RUN pip install --upgrade pip &&
 
 HELLO
 
+HAI
+
 COPY . /app/
 
 EXPOSE 8000
