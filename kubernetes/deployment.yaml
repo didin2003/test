@@ -18,5 +18,13 @@ spec:
          imagePullPolicy: Always
          ports:
           - containerPort: 8000
+         env:
+          - name: EXTRA_ALLOWED_HOSTS
+            value: |
+              hggej;worigfhlsiahg'peOTGIDGKJFHGIUWEGSDGH
+          - name: POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
      imagePullSecrets:
         - name: regcred
